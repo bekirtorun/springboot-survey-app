@@ -1,0 +1,8 @@
+jdbc:h2:mem:testdb
+Hit http://localhost:8080/users in POSTMAN
+http://localhost:8080/users/1
+http://localhost:8080/users/?size=4
+http://localhost:8080/users/?sort=name,desc
+http://localhost:8080/users/search/findByRole?role=Admin (findByRole
+fonksiyona @Param("role") annotation u tanımlanır. ama restRepository classında))
+ String expected="{id:'Question1', description: 'Largest Country in the World' , correctAnswer:  'Russia'}"; json tanımlarken value tek tırnak içine alınıyor.
